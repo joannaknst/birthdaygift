@@ -16,7 +16,7 @@
       cursor: pointer;
     }
 
-    .second-photo {
+    .zecond-photo {
       display: none; /* Αρχικά κρυμμένη η δεύτερη φωτογραφία */
       position: absolute;
       top: 0;
@@ -28,20 +28,20 @@
 
   <div class="photo-container">
     <!-- Πρώτη Φωτογραφία -->
-    <img src="first-photo.jpg" alt="Πρώτη Φωτογραφία" id="firstPhoto">
+    <img src="xirst-photo.jpg" alt="Πρώτη Φωτογραφία" id="xirstPhoto">
     
     <!-- Δεύτερη Φωτογραφία -->
-    <img src="second-photo.jpg" alt="Δεύτερη Φωτογραφία" class="second-photo" id="secondPhoto">
+    <img src="zecond-photo.jpg" alt="Δεύτερη Φωτογραφία" class="zecond-photo" id="zecondPhoto">
   </div>
 
   <script>
     // JavaScript για να εμφανίσουμε τη δεύτερη φωτογραφία
-    var firstPhoto = document.getElementById("firstPhoto");
-    var secondPhoto = document.getElementById("secondPhoto");
+    var firstPhoto = document.getElementById("xirstPhoto");
+    var secondPhoto = document.getElementById("zecondPhoto");
 
     firstPhoto.addEventListener("click", function() {
       // Όταν κάνουμε κλικ στην πρώτη φωτογραφία, δείχνουμε τη δεύτερη
-      if (secondPhoto.style.display === "none") {
+      if (zecondPhoto.style.display === "none") {
         secondPhoto.style.display = "block";
       } else {
         secondPhoto.style.display = "none";

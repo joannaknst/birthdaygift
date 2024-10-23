@@ -41,7 +41,7 @@
 
     firstPhoto.addEventListener("click", function() {
       // Όταν κάνουμε κλικ στην πρώτη φωτογραφία, δείχνουμε τη δεύτερη
-      if (secondPhoto.style.display === "none") {
+      if (secondPhoto.style.display === "none" || secondPhoto.style.display === "") {
         secondPhoto.style.display = "block";
       } else {
         secondPhoto.style.display = "none";

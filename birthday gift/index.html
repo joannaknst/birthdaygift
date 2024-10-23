@@ -31,9 +31,23 @@
     <img src="xirtst-photo.jpg" alt="Πρώτη Φωτογραφία" id="firstPhoto">
     
     <!-- Δεύτερη Φωτογραφία -->
-    <img src="xecond-photo.jpg" alt="Δεύτερη Φωτογραφία" class="second-photo" id="secondPhoto">
+    <img src="zecond-photo.jpg" alt="Δεύτερη Φωτογραφία" class="second-photo" id="secondPhoto">
   </div>
 
   <script>
     // JavaScript για να εμφανίσουμε τη δεύτερη φωτογραφία
-    var firstPhoto = do
+    var firstPhoto = document.getElementById("firstPhoto");
+    var secondPhoto = document.getElementById("secondPhoto");
+
+    firstPhoto.addEventListener("click", function() {
+      // Όταν κάνουμε κλικ στην πρώτη φωτογραφία, δείχνουμε τη δεύτερη
+      if (secondPhoto.style.display === "none") {
+        secondPhoto.style.display = "block";
+      } else {
+        secondPhoto.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
